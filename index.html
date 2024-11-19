@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📰 News Hub</h1>
+        <div class="actions">
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        </div>
+        <div class="search-filters">
+            <input type="text" id="search-bar" placeholder="Search for news...">
+            <select id="country-filter">
+                <option value="">All Countries</option>
+                <option value="us">United States</option>
+                <option value="gb">United Kingdom</option>
+                <option value="in">India</option>
+            </select>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+            </select>
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    <main>
+        <div id="loader" class="hidden">Loading...</div>
+        <div id="news-container"></div>
+    </main>
+    <footer>
+        <button id="prev-page" disabled title="Previous Page">⬅️ Previous</button>
+        <span id="page-number">1</span>
+        <button id="next-page" title="Next Page">Next ➡️</button>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
